@@ -15,8 +15,7 @@ const FLIRT_MESSAGES = [
     "Try YES instead", "System rejects NO", "Nice try cutie",
     "Are you sure?", "My heart says YES", "You're too beautiful to say no"
 ];
-
-const RAIN_MESSAGES = [
+/*const RAIN_MESSAGES = [
     "I love you", "Forever mine", "My heart is yours", 
     "You complete me", "Soulmate found", "Perfect match",
     "Love unlocked", "Happiness overload", "Dreams come true",
@@ -24,7 +23,7 @@ const RAIN_MESSAGES = [
     "Always and forever", "Made for each other", "Endless love",
     "You're perfect", "My queen", "My king", "My universe",
     "Together forever", "Eternal love", "Unbreakable bond"
-];
+];*/
 
 const ACHIEVEMENT_MESSAGES = [
     "LOVE WINS ❤️",
@@ -560,3 +559,4 @@ function createLoveRain() {
         }, i * 120);
     }
 }
+
