@@ -3,124 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Love ❤️</title>
+    <title>You & Me Forever 💕</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Playfair+Display:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Floating Hearts Container -->
-    <div class="hearts-container" id="heartsContainer"></div>
+    <!-- 3D Particles Background -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="floatingHearts"></div>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="typing-text">Hey My Love <span class="heart-pulse">❤️</span></h1>
-                <p class="subtitle">I built something special for you...</p>
-                <div class="heart-emoji">💖</div>
-            </div>
-        </section>
-
-        <!-- Message Cards Section -->
-        <section class="messages-section">
-            <h2 class="section-title">Every Day With You</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon">💌</div>
-                    <h3>You are my favorite notification</h3>
-                    <p>My heart pings every time I see you</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🔗</div>
-                    <h3>You are my forever API connection</h3>
-                    <p>Always returning love and happiness</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">💻</div>
-                    <h3>My heart compiles only for you</h3>
-                    <p>Zero errors, infinite love</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🐞</div>
-                    <h3>No bugs — only hugs</h3>
-                    <p>You debug my bad days instantly</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">⚡</div>
-                    <h3>You're my cache miss</h3>
-                    <p>I never want you cached because I love fetching you fresh every time</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Replace the existing audio section with this--> 
-        <div class="music-toggle">
-            <button id="musicBtn" aria-label="Toggle background music">
-                <i class="fas fa-volume-up"></i>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <div class="nav-logo">💕 Us</div>
+            <button id="musicToggle" class="music-btn">
+                <i class="fas fa-music"></i>
+                <span class="music-status">Play Romance</span>
             </button>
-            <audio id="backgroundMusic" loop>
-                <source src="music/music1.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
         </div>
+    </nav>
 
-        <!-- Add this audio element for celebration sound (right before closing body tag)
-        <audio id="celebrationSound" preload="auto">
-            <source src="music/celebration.mp3" type="audio/mpeg">
-        </audio> -->
-       
-        <!-- Proposal Section -->
-        <section class="proposal-section">
-            <div class="proposal-card">
-                <div class="proposal-header">
-                    <h2 class="proposal-title">Do You Love Me?</h2>
-                    <div class="romantic-emoji">💝</div>
+    <!-- Main Container -->
+    <main class="main-container">
+        
+        <!-- Hero Section with 3D -->
+        <section class="hero-section">
+            <div class="hero-3d-container">
+                <div class="rotating-heart"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="line-1">Hey Beautiful</span>
+                    <span class="line-2">You're My</span>
+                    <span class="line-3">Forever Error 404</span>
+                </h1>
+                <p class="hero-subtitle">Because someone like you can never be found again 💖</p>
+                <div class="scroll-indicator">
+                    <span>Scroll to fall deeper</span>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
-                <p class="proposal-text">My heart has been waiting for your answer...</p>
-                
-                <!-- Love Zone Container -->
-                <div class="love-zone">
-                    <div class="buttons-container" id="buttonsContainer">
-                        <button id="yesBtn" class="btn yes-btn" style="left: 30%; top: 50%; transform: translate(-50%, -50%);">
-                            YES <span class="btn-emoji">💖</span>
-                        </button>
-                        <button id="noBtn" class="btn no-btn" style="left: 70%; top: 50%; transform: translate(-50%, -50%);">
-                            NO <span class="btn-emoji">😏</span>
-                        </button>
+            </div>
+        </section>
+
+        <!-- Flirty Messages Grid -->
+        <section class="messages-section">
+            <h2 class="section-header">
+                <span class="section-emoji">💌</span>
+                <span class="section-title">Why You're My Everything</span>
+            </h2>
+            
+            <div class="cards-container">
+                <!-- Card 1 -->
+                <div class="message-card" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-emoji">🔥</div>
+                        <h3 class="card-title">You're My Infinite Loop</h3>
+                        <p class="card-text">I keep falling for you over and over again, and I never want it to break</p>
+                        <div class="card-hover-text">while(true) { love(you); }</div>
                     </div>
                 </div>
+
+                <!-- Card 2 -->
+                <div class="message-card" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-emoji">⚡</div>
+                        <h3 class="card-title">My Heart's Algorithm</h3>
+                        <p class="card-text">No matter what input I receive, the output is always "I love you"</p>
+                        <div class="card-hover-text">return "You're Perfect";</div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="message-card" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-emoji">🎯</div>
+                        <h3 class="card-title">You're My Perfect Match</h3>
+                        <p class="card-text">We're like HTML & CSS - perfect together, creating something beautiful</p>
+                        <div class="card-hover-text">You + Me = Forever</div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="message-card" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-emoji">💎</div>
+                        <h3 class="card-title">My Rare Exception</h3>
+                        <p class="card-text">You're the only exception I want to catch in my life</p>
+                        <div class="card-hover-text">try { loveYou(); }</div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="message-card" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-emoji">🌟</div>
+                        <h3 class="card-title">You're My Main Function</h3>
+                        <p class="card-text">Everything in my life starts and ends with you</p>
+                        <div class="card-hover-text">main() { return you; }</div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="message-card" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-emoji">🚀</div>
+                        <h3 class="card-title">My Successful Deployment</h3>
+                        <p class="card-text">The moment you entered my life, everything went to production perfectly</p>
+                        <div class="card-hover-text">Status: 200 Love OK</div>
+                    </div>
+                </div>
+            
+                <!-- Card 6 
+                <div class="message-card" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-emoji">🚀</div>
+                        <h3 class="card-title">My Successful Deployment</h3>
+                        <p class="card-text">The moment you entered my life, everything went to production perfectly</p>
+                        <div class="card-hover-text">Status: 200 Love OK</div>
+                    </div>
+                </div>-->
+            
+
+                <div class="message-card" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-emoji">❤️</div>
+                        <h3 class="card-title">Website Developed</h3>
+                        <p class="card-text">I think you liked this website. If you don't like the website forgive me, Because "I am SINGLE". I don't know about LOVE.</p>
+                        <div class="card-hover-text">Designed By: SRAVAN ❤️</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Love Meter -->
+        <section class="love-meter-section">
+            <div class="love-meter-container">
+                <h2 class="meter-title">Our Love Intensity</h2>
+                <div class="meter-box">
+                    <div class="meter-fill" id="meterFill"></div>
+                    <div class="meter-emoji">❤️</div>
+                </div>
+                <p class="meter-text">
+                    <span id="lovePercentage">0</span>% 
+                    <span class="meter-label">and counting...</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- The Big Question Section -->
+        <section class="proposal-section">
+            <div class="proposal-container">
+                <div class="proposal-3d-heart"></div>
                 
-                <div class="proposal-footer">
-                    <p class="hint">Hint: The universe wants you to choose YES</p>
+                <div class="proposal-content">
+                    <div class="proposal-header">
+                        <div class="proposal-emoji-group">
+                            <span class="proposal-emoji">💝</span>
+                            <span class="proposal-emoji">💕</span>
+                            <span class="proposal-emoji">💖</span>
+                        </div>
+                        <h2 class="proposal-title">Will You Be Mine?</h2>
+                        <p class="proposal-subtitle">My heart has been compiling this question for so long...</p>
+                    </div>
+
+                    <!-- Interactive Button Area -->
+                    <div class="button-playground" id="buttonPlayground">
+                        <button class="btn-yes" id="yesBtn">
+                            <span class="btn-content">
+                                <span class="btn-text">YES! 💕</span>
+                                <span class="btn-sparkle">✨</span>
+                            </span>
+                        </button>
+                        
+                        <button class="btn-no" id="noBtn">
+                            <span class="btn-content">
+                                <span class="btn-text">No 😢</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="proposal-footer">
+                        <p class="proposal-hint">💡 Hint: The "Yes" button has been waiting for your click</p>
+                        <p class="attempt-counter">No button escape attempts: <span id="escapeCount">0</span></p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Celebration Overlay -->
-        <div id="celebrationOverlay" class="celebration-overlay">
+        <div class="celebration-overlay" id="celebrationOverlay">
+            <div class="celebration-confetti" id="confetti"></div>
             <div class="celebration-content">
-                <div class="heart-explosion" id="heartExplosion"></div>
-                <h2 class="celebration-title">I knew it! You are my<br><b> life Partner ❤️</b></h2>
-                <p class="celebration-text">My heart just deployed to production with you!</p>
-                <div class="celebration-emoji">🎉💘🎊</div>
-                <button id="restartBtn" class="btn restart-btn">
-    Feel Love Again ❤️
-</button>
-                <audio id="celebrationMusic" loop>
-                    <source src="https://assets.mixkit.co/music/preview/mixkit-romantic-sunset-687.mp3" type="audio/mpeg">
-                </audio>
+                <div class="celebration-heart-burst"></div>
+                
+                <h1 class="celebration-title">
+                    <span class="celebration-line-1">I Knew It! <span>🎉</span></span>
+                    <span class="celebration-line-2">You're My Forever! 💕</span>
+                </h1>
+                
+                <p class="celebration-message">
+                    My heart just got a successful commit to the "Forever With You" repository!
+                </p>
+
+                <div class="celebration-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">💖</div>
+                        <div class="stat-value">∞</div>
+                        <div class="stat-label">Love Level</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Perfect Match</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">⏰</div>
+                        <div class="stat-value">Forever</div>
+                        <div class="stat-label">Duration</div>
+                    </div>
+                </div>
+
+                <div class="celebration-actions">
+                    <button class="btn-restart" id="restartBtn">
+                        <i class="fas fa-redo"></i>
+                        Feel It Again
+                    </button>
+                    <button class="btn-share" id="shareBtn">
+                        <i class="fas fa-heart"></i>
+                        Save This Moment
+                    </button>
+                </div>
             </div>
         </div>
+
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        <p>Built with <span class="footer-heart">❤️</span> for the most amazing person in my universe</p>
-        <p class="footer-note">You're my greatest stack overflow</p>
+        <div class="footer-content">
+            <p class="footer-text">
+                Coded with <span class="footer-heart">❤️</span> for the most incredible person in my universe
+            </p>
+            <p class="footer-subtext">You're the commit I want to merge with forever</p>
+            <p class="footer-subtext">Designed By: SRAVAN KING</p>
+        </div>
     </footer>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/music1.mp3" type="audio/mpeg">
+    </audio>
 
     <script src="script.js"></script>
 </body>
