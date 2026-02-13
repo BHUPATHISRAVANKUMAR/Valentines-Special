@@ -2,7 +2,7 @@
 // GLOBAL VARIABLES
 // ========================================
 let escapeCount = 0;
-let musicPlaying = false;
+let musicPlaying = true;
 let lovePercentage = 0;
 const bgMusic = document.getElementById('bgMusic');
 
@@ -648,3 +648,4 @@ document.head.appendChild(style);
 
 console.log('💕 Website loaded with love! 💕');
 console.log('Made with ❤️ for the most amazing person in the universe!');
+
